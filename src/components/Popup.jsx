@@ -1,11 +1,11 @@
 const Popup = ({ foodName, id, onDelete, isShow, setIsShow }) => {
   return (
     <div
-      className={`absolute left-1/2 -translate-x-1/2 py-6 px-10 bg-white rounded-lg border border-border  transition-all duration-300 ${
+      className={`w-3/4 md:w-auto absolute z-30 left-1/2 -translate-x-1/2 py-6 px-4 md:px-10 bg-white rounded-lg border border-border  transition-all duration-300 ${
         isShow ? "top-6 opacity-100 " : "-top-12 opacity-0"
       }`}
     >
-      <p>
+      <p className="text-sm md:text-base">
         Do you want to delete{" "}
         <span className="font-semibold">{`"${foodName}"`}</span>
       </p>
