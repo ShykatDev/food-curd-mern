@@ -52,7 +52,10 @@ const Form = ({ editedItem }) => {
     }
   };
   return (
-    <form onSubmit={handleSubmit} className="grid grid-cols-3 gap-6">
+    <form
+      onSubmit={handleSubmit}
+      className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
+    >
       <Field label="Food Name" inpID="foodName">
         <input
           type="text"

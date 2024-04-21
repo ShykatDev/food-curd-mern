@@ -52,7 +52,7 @@ const AllFood = () => {
         <p className="text-text text-[18px] font-medium">All Food List</p>
 
         {loading && (
-          <div className="mt-6 grid grid-cols-4 gap-6">
+          <div className="mt-6 grid md:grid-cols-3 lg:grid-cols-4 gap-6">
             <Loading />
             <Loading />
             <Loading />
@@ -62,7 +62,7 @@ const AllFood = () => {
 
         {!loading &&
           (data?.length !== 0 ? (
-            <div className="mt-6 grid grid-cols-4 gap-6">
+            <div className="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {data?.map((item) => {
                 return (
                   <FoodCard

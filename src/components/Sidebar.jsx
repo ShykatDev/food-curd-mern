@@ -8,7 +8,7 @@ const Sidebar = () => {
         <div className="size-10 bg-brand flex justify-center items-center rounded-full">
           <span className="text-white font-semibold text-xl">G</span>
         </div>
-        <p className="text-brand font-semibold">CRUD Food</p>
+        <p className="text-brand font-semibold hidden md:block">CRUD Food</p>
       </div>
 
       <div className="menu mt-10 container">
@@ -17,11 +17,11 @@ const Sidebar = () => {
         <ul className="mt-6">
           <NavLink to="/create-food" className="sidebar-btn">
             <IoCart className="text-[18px]" />
-            <span>Create Food</span>
+            <span className="hidden md:block">Create Food</span>
           </NavLink>
           <NavLink to="/" className="sidebar-btn">
             <IoDocumentText className="text-[18px]" />
-            <span>All Foods</span>
+            <span className="hidden md:block">All Foods</span>
           </NavLink>
         </ul>
       </div>

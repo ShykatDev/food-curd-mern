@@ -32,7 +32,9 @@ const CreateFood = () => {
         <div className="separator h-[10vh] border-b border-border"></div>
 
         <div className="menu mt-10 container">
-          <p className="text-text text-[18px] font-medium">Create Food Item</p>
+          <p className="text-text text-[18px] font-medium">
+            {data !== null ? "Update" : "Create"} Food Item
+          </p>
 
           <div className="mt-6">
             <Form editedItem={data} />

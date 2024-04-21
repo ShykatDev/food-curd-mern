@@ -13,7 +13,7 @@ export default {
         price: "#A855F7",
       },
       container: {
-        padding: "2rem",
+        padding: "1rem",
       },
     },
   },
